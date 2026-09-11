@@ -96,6 +96,7 @@ async function sendEmail(){
   emailjs.init({publicKey});
   const html=content(x);
   const params={
+    to_email:x.email,
     email:x.email,
     customer_name:x.name,
     reservation_ref:x.ref,
